@@ -1,0 +1,305 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.up {
+  position: fixed;
+  display: none;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  padding: 6px;
+  font-weight: bold;
+  z-index: 100000;
+}
+
+/* start header */
+.header {
+  background-color: #272360;
+}
+.header img {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/* start nav */
+.navbar-nav .nav-link {
+  padding-left: 22px !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #121212 !important;
+  font-size: 14px;
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-link:hover::before {
+  content: "";
+  width: 40px;
+  height: 4px;
+  position: absolute;
+  background-color: orange;
+  left: 50%;
+  margin-left: -15px;
+  bottom: -3px;
+}
+
+.navbar .search svg {
+  opacity: 0.65;
+  color: #121212;
+  cursor: pointer;
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+}
+.dropdown-menu li {
+  margin-bottom: 2px;
+}
+/* start landing */
+.landing {
+  position: relative;
+}
+.landing .head {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200000000;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.landing .head span {
+  font-size: 49px;
+  font-family: Playfair Display;
+}
+.landing .head h1 {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Playfair Display;
+}
+@media (max-width: 992px) {
+  .landing .head span {
+    font-size: 25px;
+  }
+  .landing .head h1 {
+    font-size: 35px;
+  }
+}
+
+.landing .head button {
+  background-color: #d5ae82 !important;
+  border-color: #d5ae82;
+  outline: none;
+}
+.landing .head button:hover {
+  background-color: #3256c6 !important;
+  border-color: #3256c6;
+  transition: all 0.8s;
+}
+/* features */
+.features {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.main-title h2 {
+  color: #272360;
+  font-size: 52px;
+  font-family: playfair-display;
+}
+
+.features p {
+  color: #000000;
+  opacity: 0.75;
+  font-size: 32px;
+}
+.features .main-title::before {
+  content: url(../images/main-title.png);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.feat {
+  margin-top: 50px;
+}
+.feat img:hover {
+  margin-top: 25px;
+  transition: all 0.8s;
+}
+/* who are we */
+.who-are-we {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.head-title h2 {
+  color: #272360;
+  font-size: 52px;
+  font-family: playfair-display;
+}
+.head-title h2::before {
+  content: url(../images/main-title.png);
+  position: absolute;
+  bottom: -20px;
+  left: 7%;
+  transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+  .head-title h2::before {
+    left: 11%;
+  }
+}
+.head-title p {
+  color: #000000;
+  font-size: 14px;
+  padding-top: 20px;
+  line-height: 1.8;
+}
+.head-title button {
+  background-color: transparent !important;
+  color: #d5ae82;
+  border: 1px solid #d5ae82;
+  opacity: 1;
+  outline: none;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.head-title button:hover {
+  background-color: #3256c6 !important;
+  border-color: #3256c6;
+  transition: all 0.8s;
+}
+/* my Services */
+.services {
+  background-image: url(../images/bg_myservices.png);
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.services .main {
+  padding-top: 80px;
+}
+.main .head-title button {
+  color: #fff;
+  background-color: #d5ae82 !important;
+  border-color: #d5ae82;
+  outline: none;
+}
+.main .head-title button:hover {
+  background-color: #3256c6 !important;
+  border-color: #3256c6;
+  transition: all 0.8s;
+}
+/* The Best Boating Experience */
+.boating-experience {
+  background-image: url(../images/bg-boating-experience.png);
+  background-size: cover;
+  padding-bottom: 230px;
+}
+.boating-experience .main-title {
+  transform: translateY(50%);
+}
+.boating-experience .main-title h4 {
+  padding-top: 10px;
+  font-size: 52px;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .boating-experience .main-title h4 {
+    font-size: 35px;
+  }
+}
+.boating-experience .main-title button {
+  color: #fff;
+  background-color: #d5ae82 !important;
+  border-color: #d5ae82;
+  outline: none;
+  margin-top: 15px;
+}
+.boating-experience .main-title button:hover {
+  background-color: #3256c6 !important;
+  border-color: #3256c6;
+  transition: all 0.8s;
+}
+/* clients */
+.clients {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* footer */
+footer {
+  background-image: url(../images/bg-footer.png);
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #ffffff;
+}
+footer p {
+  font-size: 16px;
+  text-align: left;
+  opacity: 0.7;
+  font-family: open sans;
+  margin-top: 16px;
+}
+footer .media {
+  display: flex;
+  gap: 20px;
+}
+footer h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: open sans;
+}
+footer a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-align: left;
+  opacity: 0.7;
+  font-family: open sans;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+footer p.add::before {
+  content: url(../images/Map.png);
+  margin-right: 7px;
+}
+footer p.mob::before {
+  content: url(../images/Phone.png);
+  margin-right: 7px;
+}
+footer p.tel::before {
+  content: url(../images/Tel.png);
+  margin-right: 7px;
+}
+footer p.fax::before {
+  content: url(../images/Fax.png);
+  margin-right: 7px;
+}
+footer p.mail::before {
+  content: url(../images/Mail.png);
+  margin-right: 7px;
+}
+footer p span {
+  font-size: 14px;
+  font-family: Open Sans;
+  opacity: 0.65;
+}
+/* copyright */
+.copyright {
+  background-color: #272360;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.copyright h6 {
+  color: #ffffff;
+  opacity: 0.65;
+  font-family: Open Sans;
+}
